@@ -11,9 +11,25 @@ easy to use alpine-linux docker image
 - zsh & theme
 - vim & theme & plugins
 
+## use
+basic use
+```
+docker run -it --rm -v %cd%:/workdir brokkolii/brokk-alpine /bin/zsh -c "clear; /bin/zsh"
+```
+
+use with mounted volume
+```
+mkdir %USERPROFILE%\docker_mount
+docker run -it --rm -v %USERPROFILE%\docker_mount\:/win -v %cd%:/workdir brokkolii/brokk-alpine /bin/zsh -c "clear; /bin/zsh"
+```
+
+if you are behind a proxy
+```
+WIP: add env variables for HTTP_PROXY, HTTPS_PROXY and NO_PROXY
+```
+
 ## vim
-### usage
-most important commands
+### keybindings
 ```
 leader = <space>
 
