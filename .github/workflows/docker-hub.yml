@@ -23,6 +23,6 @@ jobs:
       - name: Build and push Docker image
         working-directory: ./build
         run: |
-          docker build -t your-docker-username/your-image-name:${{ github.sha }} .
-          docker push your-docker-username/your-image-name:${{ github.sha }}
+          docker build -t brokkolii/brokk-alpine:${{ github.sha }} .
+          docker push brokkolii/brokk-alpine:${{ github.sha }}
 
