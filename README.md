@@ -8,18 +8,12 @@ easy to use alpine-linux docker image
 - npm
 - openssl
 - fzf
-- zsh
-    - OH MY ZSH - robbyrussell, af-magic
-- vim
-    - Vundle
-    - tender
-    - nerdtree
-    - fzf
-    - yats 
-    - yajs
+- zsh & theme
+- vim & theme & plugins
 
 ## vim
 ### usage
+most important commands
 ```
 leader = <space>
 
@@ -36,10 +30,13 @@ fzf
 ### settings
 
 #### theme
+```
 colorscheme tender
 set background=dark
+```
 
 #### vim
+```
 set number
 set relativenumber
 set hlsearch
@@ -50,8 +47,11 @@ set tabstop=4
 set shiftwidth=4
 set encoding=utf-8
 set scrolloff=5
+```
 
 #### nerdtree
+```
 let NERDTreeShowHidden=1
 let NERDTreeQuitOnOpen=1
+```
 
