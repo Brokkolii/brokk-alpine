@@ -25,4 +25,6 @@ jobs:
         run: |
           docker build -t brokkolii/brokk-alpine:${{ github.sha }} .
           docker push brokkolii/brokk-alpine:${{ github.sha }}
+          docker tag brokkolii/brokk-alpine:${{ github.sha }} brokkolii/brokk-alpine:latest
+          docker push brokkolii/brokk-alpine:latest
 
