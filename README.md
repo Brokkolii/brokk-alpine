@@ -18,7 +18,8 @@ easy to use alpine-linux docker image
     - yats 
     - yajs
 
-## usage
+## vim
+### usage
 ```
 leader = <space>
 
@@ -32,13 +33,13 @@ fzf
 <leader> + b => fuzzy find in buffer
 ```
 
-## settings
+### settings
 
-### theme
+#### theme
 colorscheme tender
 set background=dark
 
-### vim
+#### vim
 set number
 set relativenumber
 set hlsearch
@@ -50,7 +51,7 @@ set shiftwidth=4
 set encoding=utf-8
 set scrolloff=5
 
-### nerdtree
+#### nerdtree
 let NERDTreeShowHidden=1
 let NERDTreeQuitOnOpen=1
 
