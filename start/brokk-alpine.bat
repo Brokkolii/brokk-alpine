@@ -1,4 +1,13 @@
- @ECHO OFF
+@ECHO OFF
 
-mkdir %USERPROFILE%\docker_mount
-docker run -it --rm -v %USERPROFILE%\docker_mount\:/win -v %cd%:/workdir brokkolii/brokk-alpine /bin/zsh -c "clear; /bin/zsh"
+SET image=brokkolii/brokk-alpine
+
+IF "%1"=="local" (
+    SET image=brokk-alpine
+)
+
+IF EXIST ../.env (
+    docker run -it --rm --env-file ../.env -v %cd%:/workdir %image% /bin/zsh
+) ELSE (
+    docker run -it --rm -v %cd%:/workdir %image% /bin/zsh
+)
