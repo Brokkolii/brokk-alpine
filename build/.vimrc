@@ -19,8 +19,12 @@ if (has("termguicolors"))
 endif
 
 "tender as theme
-colorscheme tender
-set background=dark
+try
+  colorscheme tender
+  set background=dark
+catch
+  colorscheme default
+endtry
 
 "vim settings
 set number

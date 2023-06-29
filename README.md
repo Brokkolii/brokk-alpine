@@ -16,12 +16,12 @@
 ## use
 basic use *(only cmd)*
 ```
-docker run -it --rm -v %cd%:/workdir brokkolii/brokk-alpine /bin/zsh -c "clear; /bin/zsh"
+docker run -it --rm -v %cd%:/workdir brokkolii/brokk-alpine /bin/zsh
 ```
 
-if you are behind a proxy
+with git creds from .env file
 ```
-WIP: add env variables for HTTP_PROXY, HTTPS_PROXY and NO_PROXY
+docker run -it --rm --env-file %env_file% -v %cd%:/workdir brokkolii/brokk-alpine
 ```
 
 ## vim
@@ -70,5 +70,4 @@ let NERDTreeQuitOnOpen=1
 ## plans
 - prettier
 - language server (js, ts)
-- git credentials
 - proxies
