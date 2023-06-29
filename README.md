@@ -1,6 +1,7 @@
-# brokk-alpine
-easy to use alpine-linux docker image
-
+<div align="center">
+  # brokk-alpine
+  easy to use alpine-linux docker image
+</div>
 ## content
 - git
 - curl
@@ -65,3 +66,8 @@ let NERDTreeShowHidden=1
 let NERDTreeQuitOnOpen=1
 ```
 
+## plans
+- prettier
+- language server (js, ts)
+- git credentials
+- proxies
