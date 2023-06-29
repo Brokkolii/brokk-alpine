@@ -1,7 +1,8 @@
 <div align="center">
-  # brokk-alpine
-  easy to use alpine-linux docker image
+  <h1>brokk-alpine</h1>
+  <h5>easy to use alpine-linux docker image</h5>
 </div>
+
 ## content
 - git
 - curl
