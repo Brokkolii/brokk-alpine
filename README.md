@@ -20,7 +20,7 @@ docker pull brokkolii/brokk-alpine:latest
 ```
 basic use *(only cmd)*
 ```
-docker run -it --rm -v %cd%:/workdir brokkolii/brokk-alpine /bin/zsh
+docker run -it --rm -v %cd%:/workdir brokkolii/brokk-alpine
 ```
 
 with git creds from .env file
