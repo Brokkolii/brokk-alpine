@@ -20,7 +20,7 @@ RUN vim +PluginInstall +qall
 RUN npm --prefix /root/.vim/bundle/vim-prettier install
 
 RUN npm --prefix /root/.vim/bundle/coc.nvim install
-COPY coc-settings.json /root/.vim/coc-settings.json
+RUN npm --prefix /root/.config/coc/extensions install coc-tsserver coc-json --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
 
 COPY .tmux.conf /root/.tmux.conf
 ENV TERM=xterm-256color
