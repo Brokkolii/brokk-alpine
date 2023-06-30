@@ -41,6 +41,9 @@ fzf
 <leader> + f => fuzzy find in files
 <leader> + g => fuzzy find in git files
 <leader> + b => fuzzy find in buffer
+
+replacing
+<leader> + s => searchString/replaceString
 ```
 
 ### settings

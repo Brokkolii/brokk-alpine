@@ -42,6 +42,13 @@ set scrolloff=5
 let mapleader = "\<Space>"
 nnoremap <Space> <Nop>
 
+"QUICK REPLACE
+"for a visual selection
+ vnoremap <leader>s :s///gc<Left><Left><Left><Left>
+
+ "for the whole file
+ nnoremap <leader>s :%s///gc<Left><Left><Left><Left>
+ 
 
 "NERDTREE
 "open with leader + n
