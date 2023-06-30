@@ -45,10 +45,10 @@ nnoremap <Space> <Nop>
 "QUICK REPLACE
 "for a visual selection
  vnoremap <leader>s :s///gc<Left><Left><Left><Left>
-
  "for the whole file
  nnoremap <leader>s :%s///gc<Left><Left><Left><Left>
- 
+ "replace word under cursor for whole file
+ nnoremap <leader>r :%s/<C-r><C-w>//gc<Left><Left><Left>
 
 "NERDTREE
 "open with leader + n

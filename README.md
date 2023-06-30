@@ -43,7 +43,8 @@ fzf
 <leader> + b => fuzzy find in buffer
 
 replacing
-<leader> + s => searchString/replaceString
+<leader> + s => searchString / replaceString
+<leader> + r => word under cursor / replaceString
 ```
 
 ### settings
