@@ -14,6 +14,10 @@
 - vim & theme & plugins
 
 ## use
+get latest version
+```
+docker pull brokkolii/brokk-alpine:latest
+```
 basic use *(only cmd)*
 ```
 docker run -it --rm -v %cd%:/workdir brokkolii/brokk-alpine /bin/zsh
