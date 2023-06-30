@@ -34,14 +34,12 @@ cp .env-example .env
 - add start folder to PATH
 
 ### advanced
-get latest version
+- get latest version
 ```
 docker pull brokkolii/brokk-alpine:latest
 ```
-
-if you are behind a proxy use the ENV-Variables `HTTP_PROXY`, `HTTPS_PROXY` and `NO_PROXY`
-
-with git creds from .env file
+- if you are behind a proxy use the ENV-Variables `HTTP_PROXY`, `HTTPS_PROXY` and `NO_PROXY`
+- with git settings from .env file
 ```
 docker run -it --rm --env-file %env_file% -v %cd%:/workdir brokkolii/brokk-alpine
 ```
