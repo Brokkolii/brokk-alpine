@@ -90,6 +90,7 @@ set tabstop=4
 set shiftwidth=4
 set encoding=utf-8
 set scrolloff=5
+set colorcolumn=80
 ```
 
 #### nerdtree

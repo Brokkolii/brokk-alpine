@@ -17,6 +17,8 @@ COPY .vim /root/.vim
 RUN git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 RUN vim +PluginInstall +qall
 
+RUN npm --prefix /root/.vim/bundle/vim-prettier install
+
 COPY .tmux.conf /root/.tmux.conf
 ENV TERM=xterm-256color
 
