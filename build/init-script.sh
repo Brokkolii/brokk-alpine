@@ -2,7 +2,7 @@
 
 if [ -n "$GIT_USERNAME" ] && [ -n "$GIT_PASSWORD" ]; then
     git config --global credential.helper store
-    echo "https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com" > ~/.git-credentials
+    echo "https://${GIT_USERNAME}:${GIT_PASSWORD}@${GIT_SERVER}" > ~/.git-credentials
 fi
 
 if [ -n "$GIT_NAME" ]; then
