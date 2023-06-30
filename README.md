@@ -75,3 +75,4 @@ let NERDTreeQuitOnOpen=1
 - prettier
 - language server (js, ts)
 - proxies
+- easy install with git-clone and useing .env and batch to start + add to path
