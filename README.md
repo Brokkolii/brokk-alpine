@@ -123,4 +123,4 @@ let NERDTreeQuitOnOpen=1
 
 ## plans
 
--   language server (js, ts)
+-   language server (js, ts), implemented just not configuratied
