@@ -22,6 +22,7 @@ basic use *(only cmd)*
 ```
 docker run -it --rm -v %cd%:/workdir brokkolii/brokk-alpine
 ```
+if you are behind a proxy use the ENV-Variables `HTTP_PROXY`, `HTTPS_PROXY` and `NO_PROXY`
 
 with git creds from .env file
 ```

@@ -9,10 +9,14 @@ IF EXIST %ports_file% (
 		SET ports_args=%ports_args% -p %%a
 	)
 )
-ECHO %ports_args%
-pause
+
+SET proxy_args=
+IF DEFINED HTTP_PROXY SET proxy_args=%proxy_args% -e HTTP_PROXY=%HTTP_PROXY%
+IF DEFINED HTTPS_PROXY SET proxy_args=%proxy_args% -e HTTPS_PROXY=%HTTPS_PROXY%
+IF DEFINED NO_PROXY SET proxy_args=%proxy_args% -e NO_PROXY=%NO_PROXY%
+
 IF EXIST %env_file% (
-    docker run -it --rm --env-file %env_file% %ports_args% -v %cd%:/workdir brokkolii/brokk-alpine
+	docker run -it --rm --env-file %env_file% %proxy_args% %ports_args% -v %cd%:/workdir brokkolii/brokk-alpine
 ) ELSE (
-    docker run -it --rm %ports_args% -v %cd%:/workdir brokkolii/brokk-alpine
+	docker run -it --rm %proxy_args% %ports_args% -v %cd%:/workdir brokkolii/brokk-alpine
 )
