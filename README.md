@@ -14,14 +14,31 @@
 - vim & theme & plugins
 
 ## use
+### quickuse
+```
+docker run -it --rm -v %cd%:/workdir brokkolii/brokk-alpine
+```
+
+### complete setup
+- get project
+```
+git clone https://github.com/Brokkolii/brokk-alpine.git
+cd brokk-alpine
+```
+- create .env for git credentials
+```
+cp .env-example .env
+```
+- add your credentials to .env
+
+- add start folder to PATH
+
+### advanced
 get latest version
 ```
 docker pull brokkolii/brokk-alpine:latest
 ```
-basic use *(only cmd)*
-```
-docker run -it --rm -v %cd%:/workdir brokkolii/brokk-alpine
-```
+
 if you are behind a proxy use the ENV-Variables `HTTP_PROXY`, `HTTPS_PROXY` and `NO_PROXY`
 
 with git creds from .env file
@@ -79,5 +96,3 @@ let NERDTreeQuitOnOpen=1
 ## plans
 - prettier
 - language server (js, ts)
-- proxies
-- easy install with git-clone and useing .env and batch to start + add to path
