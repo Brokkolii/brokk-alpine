@@ -43,6 +43,12 @@ docker pull brokkolii/brokk-alpine:latest
 ```
 docker run -it --rm --env-file %env_file% -v %cd%:/workdir brokkolii/brokk-alpine
 ```
+## tmux
+<ctrl> + a | => split vertical
+<ctrl> + a - => split horizontally
+<ctrl> + a c => new tab
+<ctrl> + a 0-9 => switch to tab number
+<ctrl> + a , => rename tab
 
 ## vim
 ### keybindings
