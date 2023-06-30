@@ -67,3 +67,7 @@ map <Leader>f :FZF<CR>
 map <Leader>b :Buffers<CR>
 "leader + g => git files
 map <Leader>g :GFiles<CR>
+
+"PRETTIER
+"format on save
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html Prettier

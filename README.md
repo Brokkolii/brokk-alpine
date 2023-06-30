@@ -68,6 +68,9 @@ fzf
 replacing
 <leader> + s => searchString / replaceString
 <leader> + r => word under cursor / replaceString
+
+prettier
+<leader> + p => format with prettier
 ```
 
 ### settings
