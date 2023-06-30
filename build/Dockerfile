@@ -7,6 +7,7 @@ RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master
 RUN sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="af-magic"/g' ~/.zshrc
 
 RUN git config --global init.defaultBranch main
+RUN git config --global core.autocrlf input
 
 COPY .vimrc /root/.vimrc
 RUN sed -i 's/\r$//' /root/.vimrc
