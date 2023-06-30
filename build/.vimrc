@@ -12,6 +12,7 @@ Plugin 'junegunn/fzf.vim'
 Plugin 'herringtondarkholme/yats.vim'
 Plugin 'othree/yajs.vim'
 Plugin 'prettier/vim-prettier'
+Plugin 'neoclide/coc.nvim'
 call vundle#end()
 filetype plugin indent on
 
