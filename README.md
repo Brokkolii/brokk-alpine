@@ -12,6 +12,7 @@
 - fzf
 - zsh & theme
 - vim & theme & plugins
+- tmux
 
 ## use
 ### quickuse
